@@ -195,6 +195,7 @@ void Yolo::setViderWriterPara(const cv::Mat& img) {
 	m_saveH = img.size().height;
 	m_saveW = img.size().width;
 	m_viderName = "./data/" + getLocNameTime() + ".avi";
+	m_frames = 0;
 	m_viderWriter = cv::VideoWriter(m_viderName, cv::VideoWriter::fourcc('M', 'J', 'P', 'G'), 25.0, cv::Size(m_saveW, m_saveH));
 }
 
